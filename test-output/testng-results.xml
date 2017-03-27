@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20440" started-at="2017-03-27T05:14:02Z" finished-at="2017-03-27T05:14:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20440" started-at="2017-03-27T05:14:02Z" finished-at="2017-03-27T05:14:23Z">
+      <class name="testNG.TestNG">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testNG.TestNG@464bee09]" name="beforeTest" is-config="true" duration-ms="8962" started-at="2017-03-27T00:14:02Z" finished-at="2017-03-27T00:14:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="agendarCitaDoctorNOExiteDevuelveError()[pri:0, instance:testNG.TestNG@464bee09]" name="agendarCitaDoctorNOExiteDevuelveError" duration-ms="4510" started-at="2017-03-27T00:14:11Z" finished-at="2017-03-27T00:14:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agendarCitaDoctorNOExiteDevuelveError -->
+        <test-method status="PASS" signature="agendarCitaDoctoryPacienteNOExiteDevuelveError()[pri:0, instance:testNG.TestNG@464bee09]" name="agendarCitaDoctoryPacienteNOExiteDevuelveError" duration-ms="1989" started-at="2017-03-27T00:14:16Z" finished-at="2017-03-27T00:14:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agendarCitaDoctoryPacienteNOExiteDevuelveError -->
+        <test-method status="PASS" signature="agendarCitaPacienteNoExiteDevuelveError()[pri:0, instance:testNG.TestNG@464bee09]" name="agendarCitaPacienteNoExiteDevuelveError" duration-ms="1446" started-at="2017-03-27T00:14:18Z" finished-at="2017-03-27T00:14:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agendarCitaPacienteNoExiteDevuelveError -->
+        <test-method status="PASS" signature="agendarCitaPacienteyDoctorExitenteDevuelveGuardado()[pri:0, instance:testNG.TestNG@464bee09]" name="agendarCitaPacienteyDoctorExitenteDevuelveGuardado" duration-ms="1587" started-at="2017-03-27T00:14:19Z" finished-at="2017-03-27T00:14:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agendarCitaPacienteyDoctorExitenteDevuelveGuardado -->
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:testNG.TestNG@464bee09]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-03-27T00:14:21Z" finished-at="2017-03-27T00:14:21Z">
+          <exception class="java.lang.UnsatisfiedLinkError">
+            <message>
+              <![CDATA[C:\Users\Natali\AppData\Local\Temp\jna--1968759555\jna5017478349143358272.dll: Acceso denegado]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.UnsatisfiedLinkError: C:\Users\Natali\AppData\Local\Temp\jna--1968759555\jna5017478349143358272.dll: Acceso denegado
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at com.sun.jna.Native.loadNativeDispatchLibraryFromClasspath(Native.java:761)
+	at com.sun.jna.Native.loadNativeDispatchLibrary(Native.java:736)
+	at com.sun.jna.Native.<clinit>(Native.java:131)
+	at org.openqa.selenium.os.Kernel32.<clinit>(Kernel32.java:24)
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:184)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:128)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:246)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:200)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:126)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:198)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:661)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:500)
+	at testNG.TestNG.afterTest(TestNG.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1021)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.UnsatisfiedLinkError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testNG.TestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
