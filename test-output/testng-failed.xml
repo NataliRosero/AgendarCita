@@ -6,7 +6,9 @@
       <class name="testNG.TestNG">
         <methods>
           <include name="afterTest"/>
-          <include name="agendarCitaPacienteNoExiteDevuelveError"/>
+          <include name="agendarCitaFechaIgualDevuelveError"/>
+          <include name="agendarCitaFechaMenorDevuelveError"/>
+          <include name="agendarCitaCamposVaciosDevuelveError"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- testNG.TestNG -->
