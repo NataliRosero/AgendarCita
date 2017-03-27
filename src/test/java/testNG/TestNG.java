@@ -8,7 +8,9 @@ import java.util.List;
 import org.openqa.selenium.By;		
 import org.openqa.selenium.WebDriver;		
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;		
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;		
@@ -20,10 +22,10 @@ public class TestNG {
 
 	private WebDriver driver;	
 	private String url;
+	private String navegador = "chrome";  //cambiar dependiendo del navegador
 	
 	private WebElement parametrizarCasosPrueba(String fecha, String paciente, String doctor, String obs, String selector) throws InterruptedException {
-		
-		driver.get(url);
+		driver.get(url);			
 		
 		CharSequence[] date = new String[]{fecha};
 		WebElement inputDate = driver.findElement(By.id("datepicker"));
@@ -114,14 +116,30 @@ public class TestNG {
 	
 	@BeforeTest
 	public void beforeTest() {	
-		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/GeckoDriver/geckodriver.exe");
-	    driver = new FirefoxDriver();   
+		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/WebDriver/geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/WebDriver/chromedriver.exe");
+		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"/WebDriver/MicrosoftWebDriver.exe");
+	    
+		if(navegador.equals("firefox")){
+			
+			driver = new FirefoxDriver();
+			
+		}
+		else if (navegador.equals("chrome"))
+		{
+			driver = new ChromeDriver();		
+		}
+		else
+		{
+			driver = new InternetExplorerDriver();
+		}
 	    url = "http://automatizacion.herokuapp.com/nrosero/appointmentScheduling";
 	}	
 	
 	@AfterTest
 	public void afterTest() {
-		driver.close();			
+		driver.close();	
+			
 	}
 
 }

@@ -31,14 +31,14 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">65,0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">80,9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="3">testNG.TestNG</td><td><a href="#m1"><b>agendarCitaCamposVaciosDevuelveError</b>  </a></td><td class="numi">1</td><td>1490594451362</td><td class="numi">17310</td></tr><tr class="failedodd"><td><a href="#m2"><b>agendarCitaFechaIgualDevuelveError</b>  </a></td><td class="numi">1</td><td>1490594472188</td><td class="numi">16216</td></tr><tr class="failedodd"><td><a href="#m3"><b>agendarCitaFechaMenorDevuelveError</b>  </a></td><td class="numi">1</td><td>1490594488407</td><td class="numi">16458</td></tr>
+<tr class="failedodd"><td rowspan="4">testNG.TestNG</td><td><a href="#m1"><b>agendarCitaCamposVaciosDevuelveError</b>  </a></td><td class="numi">1</td><td>1490597678965</td><td class="numi">17924</td></tr><tr class="failedodd"><td><a href="#m2"><b>agendarCitaDoctorNOExiteDevuelveError</b>  </a></td><td class="numi">1</td><td>1490597696897</td><td class="numi">16026</td></tr><tr class="failedodd"><td><a href="#m3"><b>agendarCitaFechaIgualDevuelveError</b>  </a></td><td class="numi">1</td><td>1490597714199</td><td class="numi">15870</td></tr><tr class="failedodd"><td><a href="#m4"><b>agendarCitaFechaMenorDevuelveError</b>  </a></td><td class="numi">1</td><td>1490597730072</td><td class="numi">15814</td></tr>
 <tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">testNG.TestNG</td><td><a href="#m4"><b>agendarCitaDoctorNOExiteDevuelveError</b>  </a></td><td class="numi">1</td><td>1490594468683</td><td class="numi">1940</td></tr><tr class="passedodd"><td><a href="#m5"><b>agendarCitaDoctoryPacienteNOExiteDevuelveError</b>  </a></td><td class="numi">1</td><td>1490594470624</td><td class="numi">1563</td></tr><tr class="passedodd"><td><a href="#m6"><b>agendarCitaPacienteNoExiteDevuelveError</b>  </a></td><td class="numi">1</td><td>1490594504868</td><td class="numi">1593</td></tr><tr class="passedodd"><td><a href="#m7"><b>agendarCitaPacienteyDoctorExitenteDevuelveGuardado</b>  </a></td><td class="numi">1</td><td>1490594506462</td><td class="numi">1505</td></tr>
+<tr class="passedodd"><td rowspan="3">testNG.TestNG</td><td><a href="#m5"><b>agendarCitaDoctoryPacienteNOExiteDevuelveError</b>  </a></td><td class="numi">1</td><td>1490597712927</td><td class="numi">1270</td></tr><tr class="passedodd"><td><a href="#m6"><b>agendarCitaPacienteNoExiteDevuelveError</b>  </a></td><td class="numi">1</td><td>1490597745889</td><td class="numi">1226</td></tr><tr class="passedodd"><td><a href="#m7"><b>agendarCitaPacienteyDoctorExitenteDevuelveGuardado</b>  </a></td><td class="numi">1</td><td>1490597747117</td><td class="numi">1224</td></tr>
 </table>
 <h1>Default test</h1>
 <h2 id="m1">testNG.TestNG:agendarCitaFechaMenorDevuelveError</h2>
@@ -46,8 +46,8 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <p>Expected condition failed: waiting for presence of element located by: By.cssSelector: div.panel.panel-danger (tried for 15 second(s) with 500 MILLISECONDS interval)</p>
 org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 <br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:49)
-<br/>at testNG.TestNG.agendarCitaFechaMenorDevuelveError(TestNG.java:93)
+<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:51)
+<br/>at testNG.TestNG.agendarCitaFechaMenorDevuelveError(TestNG.java:95)
 <br/>25 lines not shown
 <p>Caused by Cannot locate an element using By.cssSelector: div.panel.panel-danger
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
@@ -61,18 +61,18 @@ org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedC
 <br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:184)
 <br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
 <br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:49)
-<br/>at testNG.TestNG.agendarCitaFechaMenorDevuelveError(TestNG.java:93)
+<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:51)
+<br/>at testNG.TestNG.agendarCitaFechaMenorDevuelveError(TestNG.java:95)
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">testNG.TestNG:agendarCitaCamposVaciosDevuelveError</h2>
+<h2 id="m2">testNG.TestNG:agendarCitaFechaIgualDevuelveError</h2>
 <div style="padding-left:3em">
 <p>Expected condition failed: waiting for presence of element located by: By.cssSelector: div.panel.panel-danger (tried for 15 second(s) with 500 MILLISECONDS interval)</p>
 org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 <br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:49)
-<br/>at testNG.TestNG.agendarCitaCamposVaciosDevuelveError(TestNG.java:111)
+<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:51)
+<br/>at testNG.TestNG.agendarCitaFechaIgualDevuelveError(TestNG.java:105)
 <br/>25 lines not shown
 <p>Caused by Cannot locate an element using By.cssSelector: div.panel.panel-danger
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
@@ -86,18 +86,18 @@ org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedC
 <br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:184)
 <br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
 <br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:49)
-<br/>at testNG.TestNG.agendarCitaCamposVaciosDevuelveError(TestNG.java:111)
+<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:51)
+<br/>at testNG.TestNG.agendarCitaFechaIgualDevuelveError(TestNG.java:105)
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">testNG.TestNG:agendarCitaFechaIgualDevuelveError</h2>
+<h2 id="m3">testNG.TestNG:agendarCitaCamposVaciosDevuelveError</h2>
 <div style="padding-left:3em">
 <p>Expected condition failed: waiting for presence of element located by: By.cssSelector: div.panel.panel-danger (tried for 15 second(s) with 500 MILLISECONDS interval)</p>
 org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 <br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:49)
-<br/>at testNG.TestNG.agendarCitaFechaIgualDevuelveError(TestNG.java:103)
+<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:51)
+<br/>at testNG.TestNG.agendarCitaCamposVaciosDevuelveError(TestNG.java:113)
 <br/>25 lines not shown
 <p>Caused by Cannot locate an element using By.cssSelector: div.panel.panel-danger
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
@@ -111,17 +111,40 @@ org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedC
 <br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:184)
 <br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
 <br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:49)
-<br/>at testNG.TestNG.agendarCitaFechaIgualDevuelveError(TestNG.java:103)
+<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:51)
+<br/>at testNG.TestNG.agendarCitaCamposVaciosDevuelveError(TestNG.java:113)
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">testNG.TestNG:agendarCitaPacienteyDoctorExitenteDevuelveGuardado</h2>
+<h2 id="m4">testNG.TestNG:agendarCitaDoctorNOExiteDevuelveError</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for presence of element located by: By.cssSelector: div.panel.panel-danger (tried for 15 second(s) with 500 MILLISECONDS interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:51)
+<br/>at testNG.TestNG.agendarCitaDoctorNOExiteDevuelveError(TestNG.java:79)
+<br/>25 lines not shown
+<p>Caused by Cannot locate an element using By.cssSelector: div.panel.panel-danger
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
+System info: host: &apos;NATIKPC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:899)
+<br/>at java.util.Optional.orElseThrow(Unknown Source)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:898)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:184)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+<br/>at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:51)
+<br/>at testNG.TestNG.agendarCitaDoctorNOExiteDevuelveError(TestNG.java:79)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">testNG.TestNG:agendarCitaPacienteNoExiteDevuelveError</h2>
+<h2 id="m5">testNG.TestNG:agendarCitaDoctoryPacienteNOExiteDevuelveError</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">testNG.TestNG:agendarCitaDoctoryPacienteNOExiteDevuelveError</h2>
+<h2 id="m6">testNG.TestNG:agendarCitaPacienteyDoctorExitenteDevuelveGuardado</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">testNG.TestNG:agendarCitaDoctorNOExiteDevuelveError</h2>
+<h2 id="m7">testNG.TestNG:agendarCitaPacienteNoExiteDevuelveError</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

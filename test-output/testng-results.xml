@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" total="7" passed="4">
+<testng-results skipped="0" failed="4" total="7" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65029" started-at="2017-03-27T06:00:42Z" finished-at="2017-03-27T06:01:47Z">
+  <suite name="Default suite" duration-ms="80873" started-at="2017-03-27T06:54:30Z" finished-at="2017-03-27T06:55:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65029" started-at="2017-03-27T06:00:42Z" finished-at="2017-03-27T06:01:47Z">
+    <test name="Default test" duration-ms="80873" started-at="2017-03-27T06:54:30Z" finished-at="2017-03-27T06:55:51Z">
       <class name="testNG.TestNG">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testNG.TestNG@3abbfa04]" name="beforeTest" is-config="true" duration-ms="8400" started-at="2017-03-27T01:00:42Z" finished-at="2017-03-27T01:00:51Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testNG.TestNG@3abbfa04]" name="beforeTest" is-config="true" duration-ms="8817" started-at="2017-03-27T01:54:30Z" finished-at="2017-03-27T01:54:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="agendarCitaCamposVaciosDevuelveError()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaCamposVaciosDevuelveError" duration-ms="17310" started-at="2017-03-27T01:00:51Z" finished-at="2017-03-27T01:01:08Z">
+        <test-method status="FAIL" signature="agendarCitaCamposVaciosDevuelveError()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaCamposVaciosDevuelveError" duration-ms="17924" started-at="2017-03-27T01:54:38Z" finished-at="2017-03-27T01:54:56Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for presence of element located by: By.cssSelector: div.panel.panel-danger (tried for 15 second(s) with 500 MILLISECONDS interval)]]>
@@ -20,8 +20,8 @@
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.panel.panel-danger (tried for 15 second(s) with 500 MILLISECONDS interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-	at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:49)
-	at testNG.TestNG.agendarCitaCamposVaciosDevuelveError(TestNG.java:111)
+	at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:51)
+	at testNG.TestNG.agendarCitaCamposVaciosDevuelveError(TestNG.java:113)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -65,15 +65,7 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agendarCitaCamposVaciosDevuelveError -->
-        <test-method status="PASS" signature="agendarCitaDoctorNOExiteDevuelveError()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaDoctorNOExiteDevuelveError" duration-ms="1940" started-at="2017-03-27T01:01:08Z" finished-at="2017-03-27T01:01:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- agendarCitaDoctorNOExiteDevuelveError -->
-        <test-method status="PASS" signature="agendarCitaDoctoryPacienteNOExiteDevuelveError()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaDoctoryPacienteNOExiteDevuelveError" duration-ms="1563" started-at="2017-03-27T01:01:10Z" finished-at="2017-03-27T01:01:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- agendarCitaDoctoryPacienteNOExiteDevuelveError -->
-        <test-method status="FAIL" signature="agendarCitaFechaIgualDevuelveError()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaFechaIgualDevuelveError" duration-ms="16216" started-at="2017-03-27T01:01:12Z" finished-at="2017-03-27T01:01:28Z">
+        <test-method status="FAIL" signature="agendarCitaDoctorNOExiteDevuelveError()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaDoctorNOExiteDevuelveError" duration-ms="16026" started-at="2017-03-27T01:54:56Z" finished-at="2017-03-27T01:55:12Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for presence of element located by: By.cssSelector: div.panel.panel-danger (tried for 15 second(s) with 500 MILLISECONDS interval)]]>
@@ -82,8 +74,66 @@ Driver info: driver.version: unknown
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.panel.panel-danger (tried for 15 second(s) with 500 MILLISECONDS interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-	at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:49)
-	at testNG.TestNG.agendarCitaFechaIgualDevuelveError(TestNG.java:103)
+	at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:51)
+	at testNG.TestNG.agendarCitaDoctorNOExiteDevuelveError(TestNG.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: div.panel.panel-danger
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
+System info: host: 'NATIKPC', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:899)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:898)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:184)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agendarCitaDoctorNOExiteDevuelveError -->
+        <test-method status="PASS" signature="agendarCitaDoctoryPacienteNOExiteDevuelveError()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaDoctoryPacienteNOExiteDevuelveError" duration-ms="1270" started-at="2017-03-27T01:55:12Z" finished-at="2017-03-27T01:55:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agendarCitaDoctoryPacienteNOExiteDevuelveError -->
+        <test-method status="FAIL" signature="agendarCitaFechaIgualDevuelveError()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaFechaIgualDevuelveError" duration-ms="15870" started-at="2017-03-27T01:55:14Z" finished-at="2017-03-27T01:55:30Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.cssSelector: div.panel.panel-danger (tried for 15 second(s) with 500 MILLISECONDS interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.panel.panel-danger (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:51)
+	at testNG.TestNG.agendarCitaFechaIgualDevuelveError(TestNG.java:105)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -127,7 +177,7 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agendarCitaFechaIgualDevuelveError -->
-        <test-method status="FAIL" signature="agendarCitaFechaMenorDevuelveError()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaFechaMenorDevuelveError" duration-ms="16458" started-at="2017-03-27T01:01:28Z" finished-at="2017-03-27T01:01:44Z">
+        <test-method status="FAIL" signature="agendarCitaFechaMenorDevuelveError()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaFechaMenorDevuelveError" duration-ms="15814" started-at="2017-03-27T01:55:30Z" finished-at="2017-03-27T01:55:45Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for presence of element located by: By.cssSelector: div.panel.panel-danger (tried for 15 second(s) with 500 MILLISECONDS interval)]]>
@@ -136,8 +186,8 @@ Driver info: driver.version: unknown
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.panel.panel-danger (tried for 15 second(s) with 500 MILLISECONDS interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-	at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:49)
-	at testNG.TestNG.agendarCitaFechaMenorDevuelveError(TestNG.java:93)
+	at testNG.TestNG.parametrizarCasosPrueba(TestNG.java:51)
+	at testNG.TestNG.agendarCitaFechaMenorDevuelveError(TestNG.java:95)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -181,15 +231,15 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agendarCitaFechaMenorDevuelveError -->
-        <test-method status="PASS" signature="agendarCitaPacienteNoExiteDevuelveError()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaPacienteNoExiteDevuelveError" duration-ms="1593" started-at="2017-03-27T01:01:44Z" finished-at="2017-03-27T01:01:46Z">
+        <test-method status="PASS" signature="agendarCitaPacienteNoExiteDevuelveError()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaPacienteNoExiteDevuelveError" duration-ms="1226" started-at="2017-03-27T01:55:45Z" finished-at="2017-03-27T01:55:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agendarCitaPacienteNoExiteDevuelveError -->
-        <test-method status="PASS" signature="agendarCitaPacienteyDoctorExitenteDevuelveGuardado()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaPacienteyDoctorExitenteDevuelveGuardado" duration-ms="1505" started-at="2017-03-27T01:01:46Z" finished-at="2017-03-27T01:01:47Z">
+        <test-method status="PASS" signature="agendarCitaPacienteyDoctorExitenteDevuelveGuardado()[pri:0, instance:testNG.TestNG@3abbfa04]" name="agendarCitaPacienteyDoctorExitenteDevuelveGuardado" duration-ms="1224" started-at="2017-03-27T01:55:47Z" finished-at="2017-03-27T01:55:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agendarCitaPacienteyDoctorExitenteDevuelveGuardado -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testNG.TestNG@3abbfa04]" name="afterTest" is-config="true" duration-ms="6" started-at="2017-03-27T01:01:47Z" finished-at="2017-03-27T01:01:47Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testNG.TestNG@3abbfa04]" name="afterTest" is-config="true" duration-ms="2655" started-at="2017-03-27T01:55:48Z" finished-at="2017-03-27T01:55:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

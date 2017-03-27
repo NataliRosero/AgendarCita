@@ -9,6 +9,7 @@
           <include name="agendarCitaFechaIgualDevuelveError"/>
           <include name="agendarCitaFechaMenorDevuelveError"/>
           <include name="agendarCitaCamposVaciosDevuelveError"/>
+          <include name="agendarCitaDoctorNOExiteDevuelveError"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- testNG.TestNG -->
